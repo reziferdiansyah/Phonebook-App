@@ -5,7 +5,7 @@
 Stack technologies :
 
 - Node.js (express)
-- React redux
+- React redux-saga
 - Firebase real time and GraphQl as database
 - NPM (others package)
 - Bootstrap 4.0 (View)
