@@ -38,7 +38,6 @@ router.post('/phonebooks', function (req, res, next) {
 router.put('/phonebooks/:id', function (req, res, next) {
     var _id = req.params.id
     var { name, phone } = req.body
-
     var referencePath = '/PhoneBook/' + _id + '/';
     var userReference = firebase.database().ref(referencePath);
     userReference.update({ Name: name, Phone: phone }, function (error) {
