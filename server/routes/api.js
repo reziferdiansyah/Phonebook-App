@@ -18,7 +18,6 @@ router.get('/phonebooks', function (req, res) {
 router.post('/phonebooks', function (req, res, next) {
     var { name, phone } = req.body;
     let _id = Date.now();
-
     const referencePath = '/PhoneBook/' + _id + '/';
     const userReference = firebase.database().ref(referencePath);
     userReference.set({ Name: name, Phone: phone }, function (error) {
